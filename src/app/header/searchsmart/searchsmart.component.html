@@ -1,0 +1,7 @@
+<p>
+  searchsmart works!
+</p>
+<app-searchdumb (sendToParent)="onReceiving($event)" [movies]="movies"></app-searchdumb>
+<ul *ngFor="let movie of movies.results">
+  <li>{{movie.title}}</li>
+</ul>
